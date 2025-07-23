@@ -36,18 +36,15 @@ WARNING!!! WARNING!!!
 (function (window) {
   var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
     for (var i = 0; i < names.length; i++) {
-      var name = names[i];
-      var firstLetter = name.charAt(0).toLowerCase();
+      var firstLetter = names[i].charAt(0).toLowerCase();
 
       if (firstLetter == "j") {
-        byeSpeaker.speak(name);
+        byeSpeaker.speak(names[i]);
       }
       else {
-        helloSpeaker.speak(name);
+        helloSpeaker.speak(names[i]);
       }
     }
-
-  window.name = name;
 })(window);
 
 
